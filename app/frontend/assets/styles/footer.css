@@ -1,0 +1,149 @@
+/*
+TicTacGo: Experience classic Tic-Tac-Toe against the computer. Play using
+a mouse, trackpad, or even your keyboard keys (WASD or arrow keys)!
+Copyright (C) [2024]  [Aakash Yadav]
+This file is part of [TicTacGo].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Stylesheet for the Footer and it's child elements */
+
+/* style Footer */
+footer {
+  /* height: 8.09rem; */
+  height: 8.69rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 0.8rem;
+
+  padding: 0.8rem 1.5rem;
+
+  position: fixed;
+  bottom: 0;
+
+  z-index: 5;
+
+  overflow-x: visible;
+  overflow-y: visible;
+
+  background-color: #6A1459;
+}
+
+#developer-name-and-redirection-links-container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#developer-name {
+  font-size: 1.3rem;
+
+  color: whitesmoke;
+}
+
+#footer-redirection-links {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 0.2rem; */
+  row-gap: 0.8rem;
+}
+
+.footer-redirection-links-items {
+  font-size: 1.1rem;
+}
+
+.footer-redirection-links-items a {
+  color: whitesmoke;
+}
+
+#footer-horizontal-line-container {
+  width: 100%;
+}
+
+#footer-horizontal-line {
+  width: 100%;
+
+  border: 0.12rem solid lightgrey;
+}
+
+/* Tooltip container */
+#disclaimer-tooltip-text {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted whitesmoke; /* Dotted underline for hoverable text */
+  cursor: pointer;
+
+  overflow-x: visible;
+  overflow-y: visible;
+
+  color: whitesmoke;
+}
+
+/* Tooltip text */
+#disclaimer-tooltip-text #disclaimer-full-text {
+  visibility: hidden;
+  width: 60vw;
+  height: auto;
+  background-color: #fdf9ff;
+  color: #6A1459;
+  text-align: justify;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  line-height: 1.8rem;
+  
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 100;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+#disclaimer-tooltip-text #disclaimer-full-text::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#disclaimer-tooltip-text:hover #disclaimer-full-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+#disclaimer-heading {
+  text-decoration: underline;
+}

@@ -1,0 +1,115 @@
+<!-- 
+TicTacGo: Experience classic Tic-Tac-Toe against the computer. Play using
+a mouse, trackpad, or even your keyboard keys (WASD or arrow keys)!
+Copyright (C) [2024]  [Aakash Yadav]
+This file is part of [TicTacGo].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacGo</title>
+  <link rel="stylesheet" href="./assets/styles/defaultStyle.css">
+  <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./assets/styles/mainContentContainer.css">
+  <link rel="stylesheet" href="./assets/styles/footer.css">
+</head>
+<body>
+  <header>
+    <div id="ticTacGo-name-and-logo-container">
+      <div id="ticTacGo-logo-container">
+        <img id="ticTacGo-logo" src="./assets/logo/ticTacGo-Logo.png" alt="TicTacGo">
+      </div>
+      <div id="ticTacGo-name-container">
+        <p id="ticTacGo-name">TicTacGo</p>
+      </div>
+    </div>
+  </header>
+
+  <div id="main-content-container">
+    <div id="middle-section">
+      <div id="instructions-and-start-button-container">
+        <div id="instructions-container">
+          <h3 id="game-instructions">Game Instructions</h3>
+          <ol id="game-instructions-ordered-list">
+            <li>You are 'Player 1' and the computer is 'Player 2'.</li>
+            <!-- <li>Press 'Enter' or click the 'Start' button to play the game.</li> -->
+            <li>Use either 'W', 'A', 'S', 'D' or the arrow keys on your keyboard to move on the board.</li>
+            <li>Press 'Space' to mark your symbol in the chosen box.</li>
+            <li>You can also use your mouse or trackpad to play the game.</li>
+          </ol>
+        </div>
+        <!-- <div id="start-game-button-container">
+          <button id="start-game-button" class="change-button-appearance">Start Playing</button>
+        </div> -->
+      </div>
+
+      <div id="game-stats-board-and-reset-button-container">
+        <div id="game-stats-container">
+          <h3 id="game-stats-h3-heading">Game Stats</h3>
+          <div id="game-stats-figure-container">
+            <p class="game-stats">Player 1 (You): <span class="game-individual-stats" id="player1-win-count"></span></p>
+            <p class="game-stats">Player 2 (Computer): <span class="game-individual-stats" id="player2-win-count"></span></p>
+          </div>
+        </div>
+        
+        <div id="game-announcement-text-container">
+          <p id="game-announcement-text">' '</p>
+        </div>
+
+        <div id="game-board-container">
+          <div id="game-board">
+            <div class="game-board-individual-box modify-top-border modify-left-border"><span class="game-board-boxes" id="game-board-individual-box-0">-</span></div>
+            <div class="game-board-individual-box modify-top-border"><span class="game-board-boxes" id="game-board-individual-box-1">-</span></div>
+            <div class="game-board-individual-box modify-top-border modify-right-border"><span class="game-board-boxes" id="game-board-individual-box-2">-</span></div>
+            <div class="game-board-individual-box modify-left-border"><span class="game-board-boxes" id="game-board-individual-box-3">-</span></div>
+            <div class="game-board-individual-box"><span class="game-board-boxes" id="game-board-individual-box-4">-</span></div>
+            <div class="game-board-individual-box modify-right-border"><span class="game-board-boxes" id="game-board-individual-box-5">-</span></div>
+            <div class="game-board-individual-box modify-bottom-border modify-left-border"><span class="game-board-boxes" id="game-board-individual-box-6">-</span></div>
+            <div class="game-board-individual-box modify-bottom-border"><span class="game-board-boxes" id="game-board-individual-box-7">-</span></div>
+            <div class="game-board-individual-box modify-bottom-border modify-right-border"><span class="game-board-boxes" id="game-board-individual-box-8">-</span></div>
+          </div>
+        </div>
+
+        <div id="reset-buttons-container">
+          <button class="game-reset-buttons change-button-appearance" id="restart-game-button">Restart Game</button>
+          <button class="game-reset-buttons change-button-appearance" id="reset-stats-button">Reset Stats</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="developer-name-and-redirection-links-container">
+      <span id="developer-name">Made by Aakash</span>
+      <ul id="footer-redirection-links">
+        <li class="footer-redirection-links-items" id="github-source-code"><a href="https://github.com/ydvaakash/tictacgo" target="_blank">View GitHub Repo</a></li>
+        <li class="footer-redirection-links-items" id="linkedin-profile"><a href="https://www.linkedin.com/in/ydvaakash/" target="_blank">Connect on LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div id="footer-horizontal-line-container"><hr id="footer-horizontal-line"></div>
+
+    <div id="disclaimer-tooltip-text">Important Disclaimer
+      <p id="disclaimer-full-text"><span id="disclaimer-heading">Important Disclaimer</span>: All logos, music tracks, GIFs, photos, and other assets used in this application are the property of their respective owners and copyright holders. This application is a demonstration product developed solely to showcase the developer's technical knowledge and skills. The developer has no intention of infringing upon the rights or affecting the revenue of any existing business. The developer does not claim any ownership or copyright over any of the assets utilized in the creation of this project. Any resemblance to any existing project, business, or company is purely coincidental and unintentional. Should there be any concerns regarding the use of these assets, please contact the developer for immediate rectification.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
