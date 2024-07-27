@@ -1,0 +1,34 @@
+/*
+TicTacGo: Experience classic Tic-Tac-Toe against the computer. Play using
+a mouse, trackpad, or even your keyboard keys (WASD or arrow keys)!
+Copyright (C) [2024]  [Aakash Yadav]
+This file is part of [TicTacGo].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+Explanation of the Folder Structure
+
+    /src: The source folder containing all your JavaScript source files.
+        /components: Contains components that are reusable parts of your application, like headers, footers, buttons, etc.
+        /utils: Contains utility functions that can be used throughout the application, such as math utilities, date utilities, etc.
+        /services: Contains service files for handling things like API calls or other backend interactions.
+        /models: Contains files defining data models for the application.
+        main.js: The main entry point of the JavaScript code, which typically imports and initializes various modules.
+
+    /assets: Contains static assets like images and CSS files.
+        /images: A folder to store all image files.
+        /styles: A folder to store all CSS files, like the main stylesheet (styles.css).
+
+    index.html: The main HTML file that includes your JavaScript files.
