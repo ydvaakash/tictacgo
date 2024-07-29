@@ -10,6 +10,9 @@ Experience classic Tic-Tac-Toe against the computer. Play using a mouse, trackpa
 - Restart the game easily
 - Reset game statistics
 
+## Live Preview
+Experience the game live at: [https://ydvaakash.github.io/tictacgo/](https://ydvaakash.github.io/tictacgo/)
+
 ## Contributing
 
 We welcome contributions to the TicTacGo project! For detailed guidelines on how you can contribute, please refer to our [CONTRIBUTING.md](./CONTRIBUTING.md) file. It includes information on our workflow, how to clone the repository, create feature or bugfix branches, and submit your changes for review.
